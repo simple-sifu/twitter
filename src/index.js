@@ -5,9 +5,19 @@ import "./index.css";
 function Tweet(){
     return (
         <div class="tweet">
+            <Avatar />
             Tweet
         </div>
     )
+}
+
+function Avatar(){
+    return (
+        <img
+          src="https://www.gravatar.com/avatar/nothing"
+          className="avatar"
+          alt="avatar" />
+    );
 }
 
 ReactDOM.render(<Tweet />, document.querySelector('#root'));
