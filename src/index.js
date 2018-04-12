@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import "./index.css";
 
-function HelloWorld(){
+function Tweet(){
     return (
-        <div>Hello World!</div>
+        <div class="tweet">
+            Tweet
+        </div>
     )
 }
 
-ReactDOM.render(<HelloWorld />, document.querySelector('#root'));
+ReactDOM.render(<Tweet />, document.querySelector('#root'));
